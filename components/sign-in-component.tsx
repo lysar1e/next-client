@@ -32,7 +32,8 @@ export const SignInComponent: React.FC = () => {
           }
         )
         .then(() => {
-          router.reload();
+          // router.reload();
+          router.push("/");
         })
         .catch((err) => {
           setErrMessage(err.response.data.message);
